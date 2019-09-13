@@ -15,7 +15,7 @@ app.use('/cpu',cpu);
 app.use('/battery',battery);
 app.use('/wifi',wifi);
 app.use('/graphics',graphics);
-app.use('/os'.os);
+app.use('/os',os);
 
 const PORT = 3000;
 app.listen(PORT, () => {
