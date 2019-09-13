@@ -2,15 +2,18 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 app.use(bodyParser.json());
-const system = require('systeminformation');
 
 //Routes
 const cpu = require('./routes/cpu');
 const battery = require('./routes/battery');
+const wifi = require('./routes/wifi');
+const graphics = require('./routes/graphics');
 
-//middleware
+//Middleware
 app.use('/cpu',cpu);
 app.use('/battery',battery);
+app.use('/wifi',wifi);
+app.use('/graphics',graphics);
 
 const PORT = 3000;
 app.listen(PORT, () => {
