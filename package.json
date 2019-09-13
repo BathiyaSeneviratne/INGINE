@@ -1,0 +1,20 @@
+{
+  "name": "ingine",
+  "version": "1.0.0",
+  "description": "system infromation software",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "System",
+    "information"
+  ],
+  "author": "Bathiya Seneviratne",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "systeminformation": "^4.14.8"
+  }
+}
